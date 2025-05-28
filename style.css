@@ -1,11 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@400;600&display=swap');
 
-/* Root Variables */
 :root {
     --clr-Violet: #674baf;
     --clr-Soft-Magenta: #e882e8;
     --clr-white: #ffffff;
-    --clr-Blue: #00aaff; /* Custom Blue Background */
+    --clr-bg: #674baf;
 
     --ff-heading: 'Poppins', sans-serif;
     --ff-body: 'Open Sans', sans-serif;
@@ -15,7 +14,6 @@
     --fw-600: 600;
 }
 
-/* Reset */
 *,
 *::before,
 *::after {
@@ -24,246 +22,128 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: var(--ff-body);
+    font-size: var(--fs-body);
+    background-color: var(--clr-bg);
+    color: var(--clr-white);
+    line-height: 1.6;
+}
+
 img {
     display: block;
     max-width: 100%;
 }
 
-button {
-    font: inherit;
-    cursor: pointer;
-}
-
-body {
-    font-family: var(--ff-body);
-    font-weight: var(--fw-400);
-    font-size: var(--fs-body);
-    color: var(--clr-white);
-    background-color: var(--clr-Blue); /* Updated to blue */
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    min-height: 100vh;
-    line-height: 1.6;
-}
-
-/* Header */
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
-    background-color: var(--clr-Violet);
+    padding: 1.5rem 2rem;
 }
 
 .logo {
-    width: 15rem;
+    width: 12rem;
 }
 
 .try-btn {
-    background: var(--clr-Soft-Magenta);
-    color: var(--clr-white);
-    padding: 10px 20px;
-    border: none;
-    border-radius: 999px;
-    transition: background .3s ease, color .3s ease;
-}
-
-.try-btn:hover {
-    background: var(--clr-white);
+    background-color: var(--clr-white);
     color: var(--clr-Violet);
+    padding: 0.5rem 1.5rem;
+    border: none;
+    border-radius: 50px;
+    font-weight: var(--fw-600);
+    cursor: pointer;
 }
 
-/* Hero Section */
 .hero {
     text-align: center;
-    padding: 60px 20px;
+    padding: 3rem 2rem;
 }
 
 .hero-bg {
-    display: none; /* Optional: remove or customize */
+    width: 90%;
+    max-width: 600px;
+    margin: 0 auto 2rem;
 }
 
 .hero h1 {
     font-family: var(--ff-heading);
     font-size: var(--fs-heading);
-    font-weight: var(--fw-600);
-    color: var(--clr-white);
-    margin-bottom: 20px;
+    margin-bottom: 1rem;
 }
 
 .hero p {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
+    margin-bottom: 1.5rem;
 }
 
-.hero button {
-    background: var(--clr-white);
+.hero-button {
+    background-color: var(--clr-white);
     color: var(--clr-Violet);
-    padding: 15px 30px;
+    padding: 0.75rem 2rem;
     border: none;
-    border-radius: 999px;
-    box-shadow: 0 5px 10px hsla(0, 0%, 0%, 0.4);
+    border-radius: 50px;
+    font-weight: var(--fw-600);
+    cursor: pointer;
 }
 
-.hero button:hover {
-    background: var(--clr-Soft-Magenta);
-    color: var(--clr-white);
-}
-
-/* Features Section */
 .features {
     display: flex;
-    justify-content: space-around;
     flex-wrap: wrap;
-    gap: 40px;
-    padding: 40px 20px;
+    justify-content: space-around;
+    padding: 3rem 2rem;
+    gap: 2rem;
 }
 
 .feature {
     flex: 1 1 300px;
-    max-width: 300px;
     text-align: center;
+    background-color: var(--clr-Violet);
+    padding: 1.5rem;
+    border-radius: 10px;
 }
 
-.feature img {
-    width: 100%;
-    height: auto;
+.feature-img {
+    max-width: 600px; /* Ensure all images match the hero image size */
+    margin: 0 auto 1rem;
 }
 
-.feature h2 {
-    font-family: var(--ff-heading);
-    font-weight: var(--fw-600);
-    margin-top: 15px;
-}
-
-.feature p {
-    font-size: 1rem;
-    margin-top: 10px;
-}
-
-/* CTA Section */
 .cta {
     text-align: center;
-    background-color: var(--clr-Violet);
-    color: var(--clr-white);
-    padding: 40px 20px;
+    padding: 2rem;
+    background-color: var(--clr-Soft-Magenta);
 }
 
-.cta button {
-    background: var(--clr-white);
-    color: var(--clr-Violet);
-    padding: 15px 30px;
-    border: none;
-    border-radius: 999px;
+.cta h2 {
+    margin-bottom: 1rem;
 }
 
-.cta button:hover {
-    background: var(--clr-Soft-Magenta);
-    color: var(--clr-white);
-}
-
-/* Footer */
 .footer {
-    background-color: var(--clr-Violet);
+    background-color: #50246a;
+    padding: 2rem;
     color: var(--clr-white);
-    padding: 20px;
-    text-align: center;
-}
-
-.footer .contact-info p {
     display: flex;
-    align-items: center;
-    gap: 10px;
-    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-between;
 }
 
 .footer nav {
-    margin: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
 }
 
-.footer nav a {
-    color: var(--clr-white);
-    margin: 0 10px;
-    text-decoration: none;
-}
-
-.footer nav a:hover {
-    color: var(--clr-Soft-Magenta);
-}
-
-/* Social Links (Optional) */
-.social-links i {
-    display: inline-block;
-    padding: 1rem;
-    border: 1px solid var(--clr-white);
-    border-radius: 50%;
-    transition: background .3s ease, color .3s ease;
-}
-
-.social-links i:hover {
-    color: var(--clr-Soft-Magenta);
-    border-color: var(--clr-Soft-Magenta);
-}
-
-/* Responsive Media Queries */
-@media (max-width: 1024px) {
-    .hero h1 {
-        font-size: 2rem;
-    }
-
-    .hero p {
-        font-size: 1rem;
-    }
+.footer p {
+    font-size: 0.9rem;
 }
 
 @media (max-width: 768px) {
-    .header {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .logo {
-        width: 10em;
-    }
-
-    .try-btn {
-        margin-top: 10px;
-    }
-
     .features {
         flex-direction: column;
         align-items: center;
     }
-
-    .feature {
-        max-width: 90%;
-    }
-
-    .footer .contact-info p {
-        flex-direction: column;
-    }
-
-    .footer nav {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
+    .hero h1 {
+        font-size: 2rem;
     }
 }
-
-@media (max-width: 480px) {
-    .hero h1 {
-        font-size: 1.5rem;
-    }
-
-    .hero p {
-        font-size: 0.9rem;
-    }
-
-    .try-btn,
-    .hero button,
-    .cta button {
-        padding: 10px 20px;
-        font-size: 0.9rem;
-    }
-  }
