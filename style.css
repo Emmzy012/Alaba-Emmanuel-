@@ -1,0 +1,105 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #00aaff, #ffffff);
+  color: #333;
+  line-height: 1.6;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #003366;
+  color: white;
+}
+
+.logo {
+  height: 40px;
+}
+
+.try-btn {
+  background: #0099ff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #cceeff;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #003366;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.hero button {
+  background: #0099ff;
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 30px;
+}
+
+.features {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  padding: 40px 20px;
+}
+
+.feature img {
+  max-width: 100%;
+}
+
+.cta {
+  text-align: center;
+  background-color: #003366;
+  color: white;
+  padding: 40px 20px;
+}
+
+.cta button {
+  background: #0099ff;
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 30px;
+}
+
+.footer {
+  background-color: #003366;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer img {
+  height: 20px;
+  margin-right: 10px;
+}
+
+.footer nav a {
+  margin: 0 10px;
+  color: white;
+  text-decoration: none;
+}
