@@ -34,37 +34,55 @@ body {
 }
 
 .hero {
+  position: relative;
   text-align: center;
-  padding: 60px 20px;
-  background-color: #cceeff;
+  overflow: hidden;
 }
 
-.hero h1 {
-  font-size: 3rem;
-  margin-bottom: 20px;
+.hero-bg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   color: #003366;
+  padding: 20px;
 }
 
-.hero p {
-  font-size: 1.2rem;
+.hero-text h1 {
+  font-size: 2rem;
+}
+
+.hero-text p {
+  font-size: 1rem;
   margin-bottom: 20px;
 }
 
-.hero button {
+.hero-text button {
   background: #0099ff;
   color: white;
-  padding: 15px 30px;
+  padding: 10px 20px;
   border: none;
-  border-radius: 30px;
-  cursor: pointer;
+  border-radius: 20px;
 }
 
 .features {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 40px;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
   padding: 40px 20px;
+}
+
+.feature {
+  flex: 1 1 300px;
+  max-width: 400px;
+  text-align: center;
 }
 
 .feature img {
@@ -84,7 +102,6 @@ body {
   padding: 15px 30px;
   border: none;
   border-radius: 30px;
-  cursor: pointer;
 }
 
 .footer {
@@ -105,83 +122,19 @@ body {
   text-decoration: none;
 }
 
-/* Responsive Design */
-@media (min-width: 768px) {
+@media (max-width: 768px) {
+  .hero-text h1 {
+    font-size: 1.5rem;
+  }
   .features {
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 30px;
   }
-
-  .hero h1 {
-    font-size: 4rem;
-  }
-
-  .hero p {
-    font-size: 1.4rem;
-  }
-}
-
-@media (max-width: 767px) {
   .header {
     flex-direction: column;
-    text-align: center;
+    gap: 10px;
   }
-
   .try-btn {
-    margin-top: 10px;
-  }
-
-  .hero h1 {
-    font-size: 2.2rem;
-  }
-
-  .hero p {
-    font-size: 1rem;
-  }
-
-  .features {
-    padding: 20px;
-  }
-
-  .cta h2 {
-    font-size: 1.8rem;
-  }
-
-  .cta button {
-    padding: 12px 20px;
-  }
-
-  .footer nav {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .footer nav a {
-    margin: 5px 10px;
-  }
-}
-
-@media (max-width: 480px) {
-  .hero h1 {
-    font-size: 1.8rem;
-  }
-
-  .hero p, .cta h2 {
-    font-size: 1rem;
-  }
-
-  .try-btn, .hero button, .cta button {
-    padding: 10px 15px;
-    font-size: 0.9rem;
-  }
-
-  .features {
-    gap: 20px;
-  }
-
-  .footer {
-    font-size: 0.9rem;
+    width: 100%;
   }
 }
