@@ -6,7 +6,7 @@
 
 body {
   font-family: 'Segoe UI', sans-serif;
-  background: linear-gradient(135deg, #00aaff, #ffffff); /* Predominant blue gradient */
+  background: linear-gradient(135deg, #00aaff, #ffffff); /* Blue gradient */
   color: #333;
   line-height: 1.6;
 }
@@ -40,7 +40,7 @@ body {
 }
 
 .hero h1 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   margin-bottom: 20px;
   color: #003366;
 }
@@ -95,17 +95,6 @@ body {
   color: white;
   padding: 20px;
   text-align: center;
-}
-
-.footer img {
-  height: 20px;
-  margin-right: 10px;
-}
-
-.footer nav a {
-  margin: 0 10px;
-  color: white;
-  text-decoration: none;
 }
 
 @media (max-width: 768px) {
