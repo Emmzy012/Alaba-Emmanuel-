@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@400;600&display=swap');
 
 :root {
-    --clr-Violet: #674baf;
+    --clr-Blue: #00aaff; /* Your blue color */
     --clr-Soft-Magenta: #e882e8;
     --clr-white: #ffffff;
-    --clr-bg: #674baf;
+    --clr-bg: #00aaff; /* Your blue color */
 
     --ff-heading: 'Poppins', sans-serif;
     --ff-body: 'Open Sans', sans-serif;
@@ -48,7 +48,7 @@ img {
 
 .try-btn {
     background-color: var(--clr-white);
-    color: var(--clr-Violet);
+    color: var(--clr-Blue);
     padding: 0.5rem 1.5rem;
     border: none;
     border-radius: 50px;
@@ -79,7 +79,7 @@ img {
 
 .hero-button {
     background-color: var(--clr-white);
-    color: var(--clr-Violet);
+    color: var(--clr-Blue);
     padding: 0.75rem 2rem;
     border: none;
     border-radius: 50px;
@@ -98,13 +98,13 @@ img {
 .feature {
     flex: 1 1 300px;
     text-align: center;
-    background-color: var(--clr-Violet);
+    background-color: var(--clr-Blue); /* Blue background */
     padding: 1.5rem;
     border-radius: 10px;
 }
 
 .feature-img {
-    max-width: 600px; /* Ensure all images match the hero image size */
+    max-width: 600px; /* Match hero image size */
     margin: 0 auto 1rem;
 }
 
@@ -119,7 +119,7 @@ img {
 }
 
 .footer {
-    background-color: #50246a;
+    background-color: #0077cc; /* Darker blue for footer */
     padding: 2rem;
     color: var(--clr-white);
     display: flex;
