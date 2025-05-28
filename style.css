@@ -56,6 +56,7 @@ body {
   padding: 15px 30px;
   border: none;
   border-radius: 30px;
+  cursor: pointer;
 }
 
 .features {
@@ -83,6 +84,7 @@ body {
   padding: 15px 30px;
   border: none;
   border-radius: 30px;
+  cursor: pointer;
 }
 
 .footer {
@@ -101,4 +103,85 @@ body {
   margin: 0 10px;
   color: white;
   text-decoration: none;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+  .features {
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .hero h1 {
+    font-size: 4rem;
+  }
+
+  .hero p {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .try-btn {
+    margin-top: 10px;
+  }
+
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .features {
+    padding: 20px;
+  }
+
+  .cta h2 {
+    font-size: 1.8rem;
+  }
+
+  .cta button {
+    padding: 12px 20px;
+  }
+
+  .footer nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .footer nav a {
+    margin: 5px 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero p, .cta h2 {
+    font-size: 1rem;
+  }
+
+  .try-btn, .hero button, .cta button {
+    padding: 10px 15px;
+    font-size: 0.9rem;
+  }
+
+  .features {
+    gap: 20px;
+  }
+
+  .footer {
+    font-size: 0.9rem;
+  }
 }
